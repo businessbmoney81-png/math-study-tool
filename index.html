@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- saved from url=(0063)file:///C:/Users/orteg/Downloads/STAT300_Study_Guide%20(2).html -->
 <html lang="en" style="--ribbon-rest-opacity: 0.25;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -175,11 +176,12 @@ body {
   position: relative;
   width: 240px;
   min-width: 240px;
+  height: 100vh;
   background: var(--surface);
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
-  overflow: visible;
+  overflow: hidden;
   transition: width 0.3s cubic-bezier(0.4,0,0.2,1), min-width 0.3s cubic-bezier(0.4,0,0.2,1);
   z-index: 100;
 }
@@ -972,6 +974,24 @@ details.full-problem summary::-webkit-details-marker { display: none; }
   .dual-col { grid-template-columns: 1fr; }
   .dual-left { border-right: none; border-bottom: 1px solid var(--border); }
   #content { padding: 20px 16px 60px; }
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 200;
+    overflow: hidden;
+  }
+  #nav {
+    flex: 1;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  #sidebar.rail {
+    height: 100vh;
+    height: 100dvh;
+  }
 }
 
 /* When to use */
